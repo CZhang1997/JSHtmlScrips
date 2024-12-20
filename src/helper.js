@@ -18,6 +18,7 @@ function createButton({ text, top, left, onClick }) {
     button.addEventListener("click", onClick);
   }
   document.body.appendChild(button);
+  return button;
 }
 
 function clickElementByXPath({ xpath, name, alertOnMissing = false }) {
